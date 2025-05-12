@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import GlobalProvider from './contexts/GlobalProvider'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'  //da react-router-dom not react-router!
-
+import Layout1 from './layouts/Layout1'
+import HomePage from './pages/HomePage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +15,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route element = {<Layout1/>}>
-              <Route path='/' element = {<Home/>} />
+              <Route path='/' element = {<HomePage/>} />
             </Route>
           </Routes>
         </BrowserRouter>
