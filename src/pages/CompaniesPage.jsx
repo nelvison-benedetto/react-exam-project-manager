@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../contexts/GlobalProvider";
+import { Link } from "react-router-dom";
 
 export default function CompaniesPage(){
 
@@ -26,6 +27,11 @@ export default function CompaniesPage(){
                         <strong>companyStateTaxID</strong> {company.companyStateTaxID}
                       </p>
                     </div>
+                    {company && (
+                    <Link to={`/companies/${company.id}`} className="btn btn-sm btn-primary w-100 mt-3">
+                      Show
+                    </Link>
+                  )}
                   </div>
                 </div>
               </div>

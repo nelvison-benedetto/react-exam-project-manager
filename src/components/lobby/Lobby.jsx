@@ -14,6 +14,16 @@ export default function Lobby(){
             <NavLink to="/companies" className="btn btn-primary">
               Go to Companies
             </NavLink>
+
+            <NavLink to="/projects" className="btn btn-primary">
+              Go to Projects
+            </NavLink>
+            <NavLink to="/tasks" className="btn btn-primary">
+              Go to Tasks
+            </NavLink>
+            <NavLink to="/messages" className="btn btn-primary">
+              Go to Messages
+            </NavLink>
           </div>
         </div>
       </>
