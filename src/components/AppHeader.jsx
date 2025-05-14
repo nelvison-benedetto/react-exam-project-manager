@@ -5,7 +5,6 @@ export default function AppHeader(){
         <>
             <header>
                 <NavBar/>
-                <h1>test header</h1>
             </header>
         </>
     );
