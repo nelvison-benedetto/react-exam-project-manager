@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../contexts/GlobalProvider";
+import { Link } from "react-router-dom";
 
 export default function PersonsPage(){
 
@@ -24,6 +25,11 @@ export default function PersonsPage(){
                         <strong>Phone number</strong> {person.phoneNumber}
                       </p>
                     </div>
+                    {person && (
+                    <Link to={`/persons/${person.id}`} className="btn btn-sm btn-primary w-100 mt-3">
+                      Show
+                    </Link>
+                  )}
                   </div>
                 </div>
               </div>
